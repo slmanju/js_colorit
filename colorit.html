@@ -1,0 +1,30 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="colorit.css">
+<body>
+    <div id="context-area">
+        <div id="image-div">
+            <img class="img" data-original-height="550" data-original-width="550" draggable="true" id="elephant" ondragstart="drag(event)" src="https://1.bp.blogspot.com/-hphGL6Hj2Rw/WS1GppLacWI/AAAAAAAACN0/jqSGuQWT9A87FJClBMRseb0ZsA57_lkSgCLcB/s1600/elephant.gif">
+            
+            <img class="img" data-original-height="311" data-original-width="350" draggable="true" id="butterfly" ondragstart="drag(event)" src="https://1.bp.blogspot.com/-xvRfJ9e8Bzs/WS1Gp8fjBaI/AAAAAAAACN4/LINqZsGMwPwMdcl3bUC3r3OeCUnHNIw4gCLcB/s1600/butterfly.jpg">
+            
+            <img class="img" data-original-height="720" data-original-width="576" draggable="true" id="dog" ondragstart="drag(event)" src="https://3.bp.blogspot.com/-RGEqiF-pwxo/WS1GpuMyHVI/AAAAAAAACNw/rrMpNWGcEIIrAcqCGaqgglWQPD51riWgQCLcB/s1600/dog.gif">
+            
+            <img class="img" data-original-height="768" data-original-width="1008" draggable="true" id="fish" ondragstart="drag(event)" src="https://1.bp.blogspot.com/-arjf7d_Klek/WS1GqF97wfI/AAAAAAAACOA/BjCSj5lgm-s-aHhAxLh9fMJ8-Pp0izmhQCLcB/s1600/fish.jpg">
+            
+            <img class="img" data-original-height="799" data-original-width="600" draggable="true" id="flower" ondragstart="drag(event)" src="https://2.bp.blogspot.com/-q4hY9-pml3s/WS1GqKzwmDI/AAAAAAAACN8/88Got6gMOmUByFeg5R1tTmCllfS7lMYMQCLcB/s1600/flower.gif">
+            
+            <img class="img" data-original-height="392" data-original-width="492" draggable="true" id="rabbit" ondragstart="drag(event)" src="https://4.bp.blogspot.com/-K_3GuP_T4aY/WS1GqrBN2nI/AAAAAAAACOE/LFNSrTsighMyLjv0FJay8k3Fdtq0dZ4nwCLcB/s1600/rabbit.png">
+        </div>
+        <div id="canvas-area" width="700" height="600">
+            <canvas id="colorit" ondrop="drop(event)" ondragover="allowDrop(event)" width="700" height="600"></canvas>
+        </div>
+        <div id="tool-area">
+            <span class="tool"><label>Color: </label><input type="color" id="myColor"></span>
+            <span class="tool"><label>Brush : </label><input type="range" id="myRange" value="10" min="1" max="100"> <span id="brush-size">10</span></span>
+            <span class="tool"><button id="addImage">Add Your Image</button></span>
+        </div>
+        <div id="description">Drag and drop an image icon or add your image to color</div>
+    </div>
+    <script src="colorit.js"></script>
+</body>
+</html>
